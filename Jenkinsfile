@@ -3,27 +3,27 @@ pipeline{
     stages{
         stage("TF Init"){
             steps{
-                echo "Executing Terraform Init Test...."
+                echo "Executing Terraform Init"
             }
         }
         stage("TF Validate"){
             steps{
-                echo "Validating Terraform Code Test"
+                echo "Validating Terraform Code"
             }
         }
         stage("TF Plan"){
             steps{
-                echo "Executing Terraform Plan Test"
+                echo "Executing Terraform Plan"
             }
         }
         stage("TF Apply"){
             steps{
-                echo "Executing Terraform Apply Test"
+                echo "Executing Terraform Apply"
             }
         }
         stage("Invoke Lambda"){
             steps{
-                echo "Invoking your AWS Lambda Test"
+                echo "Invoking your AWS Lambda"
             }
         }
     }
