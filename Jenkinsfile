@@ -1,9 +1,13 @@
 pipeline{
     agent any
+	tools{
+		terraform "terraform-11"
+	}
     stages{
         stage("TF Init"){
             steps{
                 echo "Executing Terraform Init"
+				sh lable:'', script:'terraform init'
 				"""
 				S3 Bucket: "3.devops.candidate.exam"
 				Region: "ap-south-1"
