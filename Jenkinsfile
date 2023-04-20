@@ -4,6 +4,11 @@ pipeline{
         stage("TF Init"){
             steps{
                 echo "Executing Terraform Init"
+				'''
+				S3 Bucket: "3.devops.candidate.exam"
+				Region: "ap-south-1"
+				Key: "amar.veer"
+				'''
             }
         }
         stage("TF Validate"){
